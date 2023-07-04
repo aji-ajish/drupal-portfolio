@@ -1,0 +1,17 @@
+<?php
+
+use Drupal\Core\Link;
+use Drupal\node\Plugin\views\argument\Nid;
+use Drupal\Core\Template\TwigExtension;
+use Drupal\Core\Path\AliasManagerInterface;
+use Drupal\Core\Path\PathValidatorInterface;
+use Symfony\Component\HttpFoundation\RequestStack;
+use Drupal\Core\Entity\ContentEntityInterface;
+
+function portfolio_preprocess(&$variables, $hook)
+{
+    $variables['base_path'] = base_path();
+    $variables['site_base_url'] = $GLOBALS['base_url'];
+}
+
+

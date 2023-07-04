@@ -1,0 +1,12 @@
+<div class="swiper-slide">
+              <div class="testimonial-item" data-aos="fade-up" data-aos-delay="{{ content.field_delay_time.0 }}">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  {{ content.field_description.0 }}
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="{{file_url(content.field_image['#items'].entity.uri.value) }}" class="testimonial-img" alt="">
+                <h3>{{ content.field_title }}</h3>
+                <h4>{{ content.field_role }}</h4>
+              </div>
+            </div><!-- End testimonial item -->

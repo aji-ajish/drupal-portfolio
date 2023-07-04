@@ -1,0 +1,17 @@
+name: portfolio
+type: theme
+description: 'my portfolio site.'
+base theme: false
+core: 8.x
+core_version_requirement:  ^8 || ^9 || ^10 
+# by adding global-styling and global-scripts here, the css/js files in the library become 
+# available to every page presented by the theme
+libraries:
+  - portfolio/global-styling
+regions:
+  header: Header
+  content: Content
+  footer: Footer
+
+menu:
+  portfolio: 'Portfolio Menu'

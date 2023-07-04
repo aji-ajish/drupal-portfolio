@@ -1,0 +1,42 @@
+<main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+        <div class="container">
+
+            <div class="section-title">
+                <h2>
+                    {{ content.field_title.0 }}
+                </h2>
+                <p>
+                    {{ content.field_description.0 }}
+                </p>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4" data-aos="fade-right">
+                    <img src="{{ file_url(content.field_image['#items'].entity.uri.value) }}" class="img-fluid" alt="">
+                </div>
+                    <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
+                        <h3>
+                            {{ content.field_sub_title.0 }}
+                        </h3>
+                        <p class="fst-italic">
+                            {{ content.field_description_1.0 }}
+                        </p>
+                        <div>
+                            <ul class="row">
+                                {{ content.field_details }}
+                            </ul>
+                        </div>
+                    <p>
+                        {{ content.field_description_2.0 }}
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+<!-- End About Section -->
+

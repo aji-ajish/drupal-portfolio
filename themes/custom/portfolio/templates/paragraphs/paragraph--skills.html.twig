@@ -1,0 +1,33 @@
+
+  <!-- ======= Skills Section ======= -->
+  <section id="skills" class="skills section-bg">
+    <div class="container">
+      <div class="section-title">
+ 
+        <h2>{{ content.field_title.0 }}</h2>
+        <p>{{ content.field_description.0 }}</p>
+      </div>
+
+      <div class="row skills-content">
+        {% for key, value in content.field_skill_levels['#items'] %}
+          <div class="col-lg-6" data-aos="fade-up">
+            <div class="progress">
+              <span class="skill">
+                {{ content.field_skill_levels[key]['#paragraph'].field_title.value }}
+                <i class="val">
+                  {{ content.field_skill_levels[key]['#paragraph'].field_value.value }}
+                  %
+                </i>
+              </span>
+              
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="{{ content.field_skill_levels[key]['#paragraph'].field_value.value }}" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+  <!-- End Skills Section -->
+
